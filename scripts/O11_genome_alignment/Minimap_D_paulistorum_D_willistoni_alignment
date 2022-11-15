@@ -1,0 +1,18 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 6
+#SBATCH -t 05:00:00 
+#SBATCH -J minimap2_genomealignment
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/log202211114_minimap2_paulistorumtowillistoni
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/log202211114_minimap2_paulistorumtowillistoni
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+O11="/proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11.fasta"
+ref="/proj/sllstore2017063/y_chromosome/D_willistoni_ref_genome/ncbi_dataset/data/GCF_018902025.1/*fasta"
+res="/proj/sllstore2017063/y_chromosome/nobackup/results"
+
+module load bioinfo-tools minimap2 samtools
+
+minimap2 -ax asm5 -t 6 $ref $O11 | samtools view -h -b | samtools sort -o ${res}/minimap2_D_paulistorum_D_willistoni.bam
+

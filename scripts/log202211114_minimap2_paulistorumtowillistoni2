@@ -1,0 +1,10 @@
+[M::mm_idx_gen::7.247*1.48] collected minimizers
+[M::mm_idx_gen::7.911*1.81] sorted minimizers
+[M::main::7.912*1.81] loaded/built the index for 744 target sequence(s)
+[M::mm_mapopt_update::8.295*1.77] mid_occ = 216
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 744
+[M::mm_idx_stat::8.565*1.75] distinct minimizers: 16244513 (92.10% are singletons); average occurrences: 1.524; average spacing: 9.973; total length: 246985538
+[M::worker_pipeline::2725.934*2.88] mapped 111 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -ax asm5 -t 6 /proj/sllstore2017063/y_chromosome/D_willistoni_ref_genome/ncbi_dataset/data/GCF_018902025.1/D_willistoni_genome.fasta /proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11.fasta
+[M::main] Real time: 2726.239 sec; CPU: 7863.116 sec; Peak RSS: 9.604 GB

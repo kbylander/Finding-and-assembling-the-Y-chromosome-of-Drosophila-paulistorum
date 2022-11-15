@@ -1,0 +1,8 @@
+[M::mm_idx_gen::7.916*1.51] collected minimizers
+[M::mm_idx_gen::9.457*1.74] sorted minimizers
+[M::main::12.585*1.56] loaded/built the index for 111 target sequence(s)
+[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 111
+[M::mm_idx_stat::13.804*1.51] distinct minimizers: 27003718 (93.30% are singletons); average occurrences: 1.430; average spacing: 5.988; total length: 231322445
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -x sr -d O11_short_index.mmi /proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11.fasta
+[M::main] Real time: 13.906 sec; CPU: 20.904 sec; Peak RSS: 1.778 GB

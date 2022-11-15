@@ -1,0 +1,47 @@
+[M::mm_idx_gen::9.153*0.96] collected minimizers
+[M::mm_idx_gen::12.886*0.97] sorted minimizers
+[M::main::14.912*0.98] loaded/built the index for 111 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 111
+[M::mm_idx_stat::15.130*0.98] distinct minimizers: 20908417 (75.26% are singletons); average occurrences: 2.078; average spacing: 5.324; total length: 231322445
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -x map-ont -d O11_long_index.mmi /proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11.fasta
+[M::main] Real time: 15.218 sec; CPU: 14.877 sec; Peak RSS: 1.625 GB
+[M::main::1.128*1.00] loaded/built the index for 111 target sequence(s)
+[M::mm_mapopt_update::1.461*1.00] mid_occ = 292
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 111
+[M::mm_idx_stat::1.675*1.00] distinct minimizers: 20908417 (75.26% are singletons); average occurrences: 2.078; average spacing: 5.324; total length: 231322445
+[M::worker_pipeline::1815.914*0.96] mapped 38866 sequences
+[M::worker_pipeline::3654.744*0.96] mapped 34231 sequences
+[M::worker_pipeline::5511.579*0.96] mapped 34475 sequences
+[M::worker_pipeline::7414.771*0.96] mapped 34433 sequences
+[M::worker_pipeline::9249.019*0.96] mapped 34204 sequences
+[M::worker_pipeline::11116.429*0.96] mapped 35352 sequences
+[M::worker_pipeline::13004.354*0.96] mapped 34002 sequences
+[M::worker_pipeline::14817.039*0.96] mapped 35123 sequences
+[M::worker_pipeline::16630.119*0.96] mapped 35238 sequences
+[M::worker_pipeline::18429.061*0.96] mapped 35654 sequences
+[M::worker_pipeline::20292.101*0.96] mapped 35165 sequences
+[M::worker_pipeline::22074.294*0.96] mapped 35739 sequences
+[M::worker_pipeline::23812.614*0.96] mapped 35655 sequences
+[M::worker_pipeline::25602.602*0.96] mapped 36335 sequences
+[M::worker_pipeline::27304.619*0.96] mapped 37006 sequences
+[M::worker_pipeline::29073.679*0.96] mapped 35859 sequences
+[M::worker_pipeline::30767.196*0.96] mapped 36524 sequences
+[M::worker_pipeline::32530.328*0.96] mapped 36459 sequences
+[M::worker_pipeline::34333.069*0.96] mapped 36409 sequences
+[M::worker_pipeline::36224.737*0.96] mapped 35610 sequences
+[M::worker_pipeline::38101.818*0.96] mapped 36893 sequences
+[M::worker_pipeline::39988.643*0.96] mapped 36792 sequences
+[M::worker_pipeline::41903.368*0.96] mapped 34946 sequences
+[M::worker_pipeline::43781.636*0.96] mapped 36123 sequences
+[M::worker_pipeline::45661.569*0.96] mapped 35186 sequences
+[M::worker_pipeline::47557.979*0.96] mapped 35304 sequences
+[M::worker_pipeline::49444.322*0.96] mapped 35634 sequences
+[M::worker_pipeline::51336.770*0.96] mapped 34686 sequences
+[M::worker_pipeline::53222.905*0.96] mapped 35553 sequences
+[M::worker_pipeline::55125.579*0.96] mapped 34772 sequences
+[M::worker_pipeline::57041.020*0.96] mapped 35108 sequences
+[M::worker_pipeline::58907.114*0.96] mapped 34618 sequences
+[M::worker_pipeline::60780.674*0.96] mapped 34518 sequences
+[M::worker_pipeline::62685.217*0.96] mapped 34888 sequences
+[M::worker_pipeline::64537.886*0.96] mapped 34397 sequences
