@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 1
+#SBATCH -t 01:00:00
+#SBATCH -J bam_to_bai
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/log_bambai
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/log_bambai
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+res="/proj/sllstore2017063/y_chromosome/nobackup/results"
+
+module load bioinfo-tools samtools
+
+samtools sort ${res}/*.bam -o ${res}/minimap2_D_paulistorum_D_willistoni2.sorted.bam
+samtools index -b ${res}/minimap2_D_paulistorum_D_willistoni2.sorted.bam
+
