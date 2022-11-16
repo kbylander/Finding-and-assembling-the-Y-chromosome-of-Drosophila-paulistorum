@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -A snic2022-22-721
 #SBATCH -p core -n 1
-#SBATCH -t 5-00:00:00
+#SBATCH -t 2-00:00:00
 #SBATCH -J long_map
 #SBATCH --mail-user jay.hakansson.4449@student.uu.se
 #SBATCH --mail-type=FAIL,END
