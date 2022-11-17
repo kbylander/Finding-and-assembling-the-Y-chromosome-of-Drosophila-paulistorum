@@ -12,7 +12,7 @@ module load bioinfo-tools blast/2.12.0+
 
 O11='/proj/sllstore2017063/y_chromosome/rawdata/O11_data/'
 other='/proj/sllstore2017063/y_chromosome/rawdata/other_data/'
-result='/proj/sllstore2017063/y_chromosome/nobackup/results/gene_fishing/'
+result='/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/gene_fishing/'
 
 # makeblastdb -dbtype nucl -in genes.fasta -out ${result}database_genes
 # blastdbcmd -db ${result}database_genes -info
