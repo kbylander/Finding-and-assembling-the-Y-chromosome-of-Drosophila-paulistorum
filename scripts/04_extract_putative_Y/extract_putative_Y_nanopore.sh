@@ -8,6 +8,8 @@
 #SBATCH --mail-user ellen.siggstedt.1185@student.uu.se
 #SBATCH --mail-type=FAIL,END
 
+#Script to extract nanopore reads mapping to putative Y contigs
+
 module load bioinfo-tools samtools/1.14
 
 RESULT='/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/'
