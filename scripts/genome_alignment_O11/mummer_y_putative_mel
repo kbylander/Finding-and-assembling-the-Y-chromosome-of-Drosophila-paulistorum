@@ -1,0 +1,25 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 1
+#SBATCH -t 00:01:00
+#SBATCH -J mummer_y_put_mel
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/mummer_y_put_mel
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/mummer_y_put_mel
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+RES_DIR="/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/genome_alignment_O11"
+
+module load bioinfo-tools MUMmer
+
+#nucmer --mum -t 3 -p ${RES_DIR}/y_put_mummer/y_put_alignment_mel ${RES_DIR}/y_contigs_mel.fasta ${RES_DIR}/y_contigs_O11.fasta
+
+delta-filter -i 80 -l 200 ${RES_DIR}/y_put_mummer/y_put_alignment_mel.delta > ${RES_DIR}/y_put_mummer/y_put_alignment_filtered2_mel.delta
+
+#show-coords -TrH ${RES_DIR}/y_put_mummer/y_put_alignment_filtered_mel.delta > ${RES_DIR}/y_put_mummer/y_put_alignment_show_coords_mel.out
+
+#awk -F'\t' '{print $8, $1, $2, $9, $7}' ${RES_DIR}/y_put_mummer/y_put_alignment_show_coords_mel.out > ${RES_DIR}/y_put_mummer/y_put_alignment_show_coords_mel.bed
+
+#mummerplot --png -p ${RES_DIR}/mummerplot/mummerplot_y_put_mel2 -R ${RES_DIR}/y_contigs_mel.fasta -Q ${RES_DIR}/y_contigs_O11.fasta ${RES_DIR}/y_put_mummer/y_put_alignment_filtered2_mel.delta
+
+mummerplot --png -p ${RES_DIR}/mummerplot/mummerplot_y_put_filtered2_mel -l ${RES_DIR}/y_put_mummer/y_put_alignment_filtered2_mel.delta -R ${RES_DIR}/y_contigs_mel.fasta

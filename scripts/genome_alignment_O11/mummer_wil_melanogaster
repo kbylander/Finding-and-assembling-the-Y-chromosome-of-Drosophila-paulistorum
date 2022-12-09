@@ -1,0 +1,24 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 1
+#SBATCH -t 00:10:00 
+#SBATCH -J mummer_wil_mel
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/mummer_mel_wil_20221118
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/mummer_mel_wil_20221118
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+SUB="/proj/sllstore2017063/y_chromosome/D_willistoni_ref_genome/ncbi_dataset/data/GCF_018902025.1/*fasta"
+RES_DIR="/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/genome_alignment_O11"
+REF="/proj/sllstore2017063/y_chromosome/rawdata/other_data/dmel_scaffold2_V5.fasta"
+MUMMER_FILE="/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/genome_alignment_O11/wil_mel_alignment.delta"
+
+module load bioinfo-tools MUMmer
+
+#nucmer -t 3 -p ${RES_DIR}/wil_mel_alignment $REF $SUB
+
+delta-filter -i 30 -l 40 $MUMMER_FILE > ${RES_DIR}/wil_mel_alignment_filtered.delta
+
+show-coords -TrH ${RES_DIR}/wil_mel_alignment_filtered.delta > ${RES_DIR}/wil_mel_alignment_show_coords.out
+
+awk -F'\t' '{print $8, $1, $2, $9, $7}' ${RES_DIR}/wil_mel_alignment_show_coords.out > ${RES_DIR}/wil_mel_alignment_show_coords.bed

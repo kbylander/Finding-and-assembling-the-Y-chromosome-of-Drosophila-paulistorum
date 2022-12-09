@@ -1,0 +1,20 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 6
+#SBATCH -t 00:20:00 
+#SBATCH -J minimap_O11_mel
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/minimap_dmel2_20221125
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/minimap_dmel_20221125
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+O11="/proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11.fasta"
+REF="/proj/sllstore2017063/y_chromosome/rawdata/other_data/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna"
+RES_DIR="/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/genome_alignment_O11"
+
+module load bioinfo-tools minimap2 samtools
+
+minimap2 -ax asm10 -t 6 $REF $O11 | samtools view -h -b | samtools sort -o ${RES_DIR}/minimap2_O11_mel2.bam
+
+samtools index -b ${RES_DIR}/minimap2_O11_mel2.bam
+
