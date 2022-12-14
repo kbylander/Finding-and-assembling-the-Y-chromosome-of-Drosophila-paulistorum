@@ -1,3 +1,6 @@
+# Script from:
+# https://github.com/MikeTrizna/assembly_stats/blob/master/assembly_stats/assembly_stats.py
+
 import numpy as np
 from itertools import groupby
 import json
