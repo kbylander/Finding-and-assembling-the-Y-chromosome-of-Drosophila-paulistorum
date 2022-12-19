@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 4
+#SBATCH -t 10:00:00
+#SBATCH -J merge_m
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/merge_m
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/merge_m
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+STAR_DIR="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/08_RNA_mapping"
+
+module load bioinfo-tools samtools
+
+BAM_FILES="${STAR_DIR}/*.sortedByCoord.out.bam"
+
+samtools merge -f -o ${STAR_DIR}/m_star_merged.bam -@ 3 ${BAM_FILES}

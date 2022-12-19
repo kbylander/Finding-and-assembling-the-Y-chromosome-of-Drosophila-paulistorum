@@ -1,0 +1,30 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 10
+#SBATCH -t 5-10:00:00
+#SBATCH -J flye_star_F
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/flye_star_F
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/flye_star_F
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+RES_DIR="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/08_RNA_mapping/star_output"
+RNA_DIR="/crex/proj/sllstore2017063/y_chromosome/rawdata/O11_data/transcriptomic_data"
+GENOME_FILE="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/05_assemblies/flye_assembler_nanopore/*.fasta"
+GENOME_IND="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/08_RNA_mapping/genome_index"
+module load bioinfo-tools star
+
+for R1 in ${RNA_DIR}/*WT-F-abd*R1*
+do
+  echo $R1
+  R2=${R1/_R1_001.fastq.gz/_R1_001.fastq.gz}
+  NAME=$(basename $R1 _R1_001.fastq.gz)
+  echo $R2
+  echo $NAME
+ 
+ # align with STAR
+  STAR --runThreadN 10 --genomeDir $GENOME_IND \
+    --readFilesIn $R1 $R2 --outSAMtype BAM SortedByCoordinate \
+    --readFilesCommand zcat --outFileNamePrefix ${RES_DIR}/$NAME
+done
+
