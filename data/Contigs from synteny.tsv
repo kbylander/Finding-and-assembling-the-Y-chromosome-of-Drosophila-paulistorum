@@ -1,0 +1,12 @@
+	Synteny comparison between D. paulistorum and D. willistoni		
+	Melanogaster alignment window		D. paulistorum, notable alignments 
+	Y_Contig2:923,155-1,011,280		ctg000590 Y_Contig2:960650-961132 Score = 95.48 ctg000250 Y_Contig2:1009023-1010276 Score = 94.73 ctg001050 Y_Contig2:1009023-1010276 Score = 96.04
+	Y_Contig35:147,399-154,794		ctg000860 Y_Contig35:150921-151054 Score = 96.3
+	Y_Contig33:113,702-139,038		ctg000580 Y_Contig33:123293-125703 Score = 94.31 ctg000250 Y_Contig33:128273-129335 Score = 96.53
+	Y_Contig122:15,650-38,751		ctg000860 Y_Contig122:26942-29586 Score = 96.61
+	Y_Contig40:1,901-6,387		ctg000580 Y_Contig40:2576-5224 Score = 95.81 ctg000580 Y_Contig40:2576-5224 Score = 96.19 ctg000860 Y_Contig40:2576-5224 Score = 96.12
+	Y_Contig48:30,646-45,412		ctg000250 Y_Contig48:39307-41954 Score = 96.83 ctg000860 Y_Contig48:39307-41954 Score = 96.53 ctg001050 Y_Contig48:39307-41954 Score = 94.99
+	Y_Contig44:17,747-31,431		ctg000250 Y_Contig48:39307-41954 Score = 96.83 ctg000860 Y_Contig48:39307-41954 Score = 96.53 ctg001050 Y_Contig48:39307-41954 Score = 94.99
+	Y_Contig106		ctg000500 Y_Contig106:11142-11615 Score = 99.37 ctg000500 Y_Contig106:50410-50876 Score = 99.36
+	Y_Contig33:1-202,691		ctg000580 Y_Contig33:123293-125703 Score = 94.31
+	Y_Contig44		ctg000580 Y_Contig44:1870-3612 Score = 97.48
