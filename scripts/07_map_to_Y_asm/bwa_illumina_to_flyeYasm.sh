@@ -3,8 +3,8 @@
 #SBATCH -p core -n 2
 #SBATCH -t 3-00:00:00
 #SBATCH -J short_map_to_Y
-#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/12122022_bwa_to_flye #write slurm log name here
-#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/12122022_bwa_to_flye #write same slurm log name here
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/20122022_bwa_mixed_to_flye #write slurm log name here
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/201222_bwa_mixed_to_flye #write same slurm log name here
 #SBATCH --mail-user jay.hakansson.4449@student.uu.se
 #SBATCH --mail-type=FAIL,END
 

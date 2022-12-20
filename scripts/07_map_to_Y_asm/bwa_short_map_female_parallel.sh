@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-R1_PAIRED="/proj/sllstore2017063/y_chromosome/rawdata/O11_data/short_read_data/*_R1.fastq.gz"
+R1_PAIRED="/proj/sllstore2017063/y_chromosome/rawdata/O11_data/short_read_data/Sample*R1.fastq.gz"
 for i in $R1_PAIRED
 do
 	R2_PAIRED=${i/_R1.fastq.gz/_R2.fastq.gz}
