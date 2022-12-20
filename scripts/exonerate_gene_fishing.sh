@@ -38,7 +38,17 @@ cd $RESULT
 #exonerate --model affine:local --percent 10 --bestn 3 -Q dna -T dna -q $GENES -t $Y_ASSEMBLY > 10_percent_flye_Y_asm_gene_hits.txt
 
 #alignment of (probably) Y-specific genes that exist in both willistoni and melanogaster
-exonerate --model affine:local --bestn 5 -Q dna -T dna -q $Y_SPEC_GENES -t $ASSEMBLY > Y_spec_genes_to_O11_best5.txt
+#exonerate --model affine:local --bestn 5 -Q dna -T dna -q $Y_SPEC_GENES -t $ASSEMBLY > Y_spec_genes_to_O11_best5.txt
 
-exonerate --model affine:local --bestn 5 -Q dna -T dna -q $Y_SPEC_GENES -t $Y_ASSEMBLY > Y_spec_genes_to_flye_Y_asm_best5.txt
+#exonerate --model affine:local --bestn 5 -Q dna -T dna -q $Y_SPEC_GENES -t $Y_ASSEMBLY > Y_spec_genes_to_flye_Y_asm_best5.txt
+
+
+#exonerate --model affine:local --percent 10 -Q dna -T dna -q $Y_SPEC_GENES -t $ASSEMBLY > Y_spec_genes_to_O11_10percent.txt
+
+#exonerate --model affine:local --percent 10 -Q dna -T dna -q $Y_SPEC_GENES -t $Y_ASSEMBLY > Y_spec_genes_to_flye_Y_asm_10percent.txt
+
+
+exonerate --model affine:local --percent 5 --bestn 1 -Q dna -T dna -q $Y_SPEC_GENES -t $ASSEMBLY > Y_spec_genes_to_O11_5percent.txt
+
+exonerate --model affine:local --percent 5 --bestn 1 -Q dna -T dna -q $Y_SPEC_GENES -t $Y_ASSEMBLY > Y_spec_genes_to_flye_Y_asm_5percent.txt
 
