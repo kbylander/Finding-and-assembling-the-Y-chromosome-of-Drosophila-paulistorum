@@ -33,7 +33,6 @@ if __name__ == "__main__":
        	       	depth_contig=int(row[2])
        	       	count_contig=1
                 depth_list=[]
-                
         mean_depth=depth_contig/count_contig
         for i in depth_list:
             std_dev+=(i-mean_depth)**2

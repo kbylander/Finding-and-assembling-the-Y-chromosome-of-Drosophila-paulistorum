@@ -12,7 +12,11 @@ The output file should also be correctly named for what the purpose is.
 """
 if __name__ == "__main__":
     #Read in list of contigs
-    data=pd.read_csv(sys.argv[2], sep='\t',usecols=[6],header=None,names=["contig"])
+    data=pd.read_csv(sys.argv[2], sep='\t',header=None,usecols=[0],names=["contig"])
+   
+    #data pre-proccesing
+    contigs=data['contig'].to_string(index=False)
+    contigs=contigs.split("\n")
 
     fasta_id=[]
     fasta_seq=[]
@@ -26,6 +30,7 @@ if __name__ == "__main__":
         
     for ind,line in enumerate(fastas):
         if ">" in line:
+            print(line)
             contig_name=line.split()[0]
             fasta_id.append(contig_name)
             counter+=1

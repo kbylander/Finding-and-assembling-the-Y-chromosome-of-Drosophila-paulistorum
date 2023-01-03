@@ -9,7 +9,7 @@ sys.argv[2] : 1 png name
 sys.argv[3] : 2 png name
 
 Might need to adapt x and y lim. 
-
+Creates figures: 5 and 6
 """
 if __name__ == "__main__":  
 

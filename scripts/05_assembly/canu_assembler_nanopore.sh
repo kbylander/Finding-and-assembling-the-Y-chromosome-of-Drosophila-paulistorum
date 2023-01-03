@@ -2,7 +2,7 @@
 #SBATCH -A snic2022-22-721
 #SBATCH -p core
 #SBATCH -n 4
-#SBATCH -t 24:00:00 
+#SBATCH -t 10-00:00:00 
 #SBATCH -J canu_assembler_nanopore
 #SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/canu_assembler_nanopore
 #SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/canu_assembler_nanopore

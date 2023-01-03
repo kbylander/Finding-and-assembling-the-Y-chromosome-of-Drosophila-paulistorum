@@ -1,0 +1,26 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 1
+#SBATCH -t 00:10:00
+#SBATCH -J mummer_flye_wil
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/mummer_flye_wil
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/mummer_flye_wil
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+RES_DIR="/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/genome_alignment_O11"
+FLYE="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/05_assemblies/flye_assembler_nanopore/*.fasta"
+EVAL_DIR="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/06_assembly_eval/flye_mummer"
+
+module load bioinfo-tools MUMmer
+
+#nucmer --mum -t 3 -p ${EVAL_DIR}/flye_wil_alignment ${RES_DIR}/y_contigs_wil.fasta ${FLYE}
+
+delta-filter -i 80 -l 6000 ${EVAL_DIR}/flye_wil_alignment.delta > ${EVAL_DIR}/flye_wil_alignment_filtered.delta
+
+#show-coords -TrH ${EVAL_DIR}/flye_wil_alignment_filtered.delta > ${EVAL_DIR}/flye_wil_alignment_show_coords.out
+
+#awk -F'\t' '{print $8, $1, $2, $9, $7}' ${EVAL_DIR}/flye_wil_alignment_show_coords.out > ${EVAL_DIR}/flye_wil_alignment_show_coords.bed
+
+mummerplot --png -p ${EVAL_DIR}/flye_wil_alignment_filtered3 -l ${EVAL_DIR}/flye_wil_alignment_filtered.delta -R ${RES_DIR}/y_contigs_wil.fasta
+rm ${EVAL_DIR}/*gp ${EVAL_DIR}/*plot

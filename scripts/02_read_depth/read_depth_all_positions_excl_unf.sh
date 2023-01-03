@@ -5,7 +5,7 @@
 #SBATCH -J depth_all
 #SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/191222_read_depth
 #SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/191222_read_depth
-#SBATCH --mail-user jay.hakansson.4449@student.uu.se
+#SBATCH --mail-user ellen.siggstedt.1185@student.uu.se
 #SBATCH --mail-type=FAIL,END
 
 module load bioinfo-tools samtools
@@ -29,7 +29,7 @@ cd $READS
 
 #Canu assembly
 cd $READS_CANU
-samtools depth -f sorted_illumina_list.txt -aa -Q 10 -o $RESULT_CANU/read_depth_all_positions_illumina.out
+#samtools depth -f sorted_illumina_list.txt -aa -Q 10 -o $RESULT_CANU/read_depth_all_positions_illumina.out
 
-#samtools depth sorted_O11_nanopore_aln.bam -aa -Q 10 -o $RESULT_CANU/read_depth_all_positions_nanopore.out
+samtools depth sorted_.bam -aa -Q 10 -o $RESULT_CANU/read_depth_all_positions_nanopore.out
 
