@@ -1,6 +1,12 @@
 import pandas as pd
 import numpy as np
 
+"""
+Author: Karl Bylander, 2023-01-03
+
+Finds the putative contigs, which fullfills condition of the if-statement on row 28.
+"""
+
 #names of the input files, from the chang & Larracuente scipt. 
 colnames=["contig", "base", "i"," sum f","sum mixed", "average ratio", " median ratio"]
 

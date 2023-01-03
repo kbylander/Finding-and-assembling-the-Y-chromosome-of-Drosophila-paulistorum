@@ -1,26 +1,59 @@
-import sys
 import pandas as pd
-from Bio import SeqIO
+import sys
+"""
+Author: Karl Bylander, 2023-01-03
+to call in terminal use 
+python <name of script> <genome fasta> <contig filter list> <output file> 
 
-#sys.argv[1] is the name of the contig list
-#sys.argv[2] is the whole fasta file
-#sys.argv[3] is the output file
+The script needs to be adapted, depending on how the file looks, see usecols for example in line 12.
 
-#the script does however need to be adapted, depending on how the file looks, see usecols for example in line 12.
+Current script is adopted for the D. willistoni genome. 
 
+The output file should also be correctly named for what the purpose is. 
+"""
 if __name__ == "__main__":
-    data_all=pd.read_csv(sys.argv[1], sep='\t',usecols=[0],header=None,names=["contig"])
-    fasta_sequences = SeqIO.parse(open(sys.argv[2]),'fasta')
-    genome=pd.DataFrame(columns=["fasta","sequence"])
-    contigs=data_all['contig'].to_string(index=False)
+    #Read in list of contigs
+    data=pd.read_csv(sys.argv[2], sep='\t',usecols=[0],header=None,names=["contig"])
+    print("start")
+   
+    #data pre-proccesing
+    contigs=data['contig'].to_string(index=False)
     contigs=contigs.split("\n")
-    print(contigs)
-    for fasta in fasta_sequences:
-       print(fasta.id)
-       if fasta.id in contigs:
-            genome.loc[len(genome)] = [fasta.id, str(fasta.seq)]
 
-    print("Number of contigs fetched: ",len(genome))
+    fasta_id=[]
+    fasta_seq=[]
+    relevant_ind=[]
+
+    counter=0
+
+    #Load in data
+    with open(sys.argv[1]) as f:
+        fastas = f.readlines()
+        
+    for ind,line in enumerate(fastas):
+        if ">" in line:
+            print(line)
+            contig_name=line.split()[0]
+            fasta_id.append(contig_name)
+            counter+=1
+        elif len(fasta_seq) < counter:
+            fasta_seq.append(line)
+        else:
+            fasta_seq[counter-1] += line
+
+    print(len(fasta_seq[id]))
+
+    genome=pd.DataFrame(columns=["id","seq"])
+
+    for i in range(0,len(fasta_id)):
+        if fasta_id[i][1:] in contigs:
+            genome.loc[len(genome)] = [fasta_id[i], fasta_seq[i]]
+
+    #Add the fastas to the dataframe if the contig name is in the list, and add ">" to the fastas for readability
+    print("length of final list:",len(genome))
+    print("anticipated length:",len(contigs))
+    print(genome)
+
     genome.to_csv(sys.argv[3], sep='\n', index=False, header=False)
-
-
+    
+ 
