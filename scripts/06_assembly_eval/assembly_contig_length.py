@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 
 """"
 Author: Karl Bylander, 2023-01-03
-
+Probably need to adapt axises
+Creates figures: 16 and 15
 """
 #assembly_info.txt input
 data_new=pd.read_csv("assembly_info.txt", sep='\t',usecols=[0,1,2])
