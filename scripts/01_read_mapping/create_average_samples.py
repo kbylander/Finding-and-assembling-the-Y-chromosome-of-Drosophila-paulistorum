@@ -6,6 +6,8 @@ the last four are assumed to be female only
 Give a name for the output file (that doesn't already exist and ends w/ .out)
 The output will have columns: contig, POS, Female average, Mixed average
 to better fit the frame_depth_new.pl by Chang and Larracuente
+Author: Jay Håkansson
+Date: 2023-01-04
 """
 import sys
 

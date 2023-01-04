@@ -1,5 +1,7 @@
 #!/bin/bash -l
 
+#Author: Jay Håkansson
+#Date: 2023-01-04
 
 R1_PAIRED="/proj/sllstore2017063/y_chromosome/rawdata/O11_data/short_read_data/*R1*"
 for i in $R1_PAIRED

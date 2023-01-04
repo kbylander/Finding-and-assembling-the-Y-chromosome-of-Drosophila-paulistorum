@@ -8,6 +8,9 @@
 #SBATCH --mail-user jay.hakansson.4449@student.uu.se
 #SBATCH --mail-type=FAIL,END
 
+#Author: Jay Håkansson
+#Date: 2023-01-04
+
 O11=/proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11.fasta
 outdir=/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/01_read_mapping/
 O11_CANU=/proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11_Canu_contigs.fasta

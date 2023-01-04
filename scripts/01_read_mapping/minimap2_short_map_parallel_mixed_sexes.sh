@@ -1,5 +1,8 @@
 #!/bin/bash -l
 
+#Author Jay Håkansson
+#Date: 2023-01-04
+
 outdir=/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/01_read_mapping/
 cd $outdir
 
