@@ -5,7 +5,7 @@ use strict;
 # Author: Ching-Ho Chang
 # for Chang and Larracuente 2018. Heterochromatin-enriched assemblies reveal the sequence and organization of the Drosophila melanogaster Y chromosome
 # calculate sum of depth, average and median F/M for each 10kb window
-#
+# Edited by Jay Håkansson 
 my $i=0;
 my $sum =0;
 my $sum2 =0;

@@ -1,7 +1,7 @@
 #Script for normalizing depth output per sample
 
 """
-Authors: Karl Bylander, 2023-01-03
+Authors: Karl Bylander, Jay Håkansson,  2023-01-03
 """
 
 import pandas as pd

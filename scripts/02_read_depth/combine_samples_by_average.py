@@ -5,6 +5,9 @@
 # The output will have female samples in column 3
 # and mixed samples in column 4, to better match the frame_depth_new.pl script from Chang and Larracuente
 
+#Author: Jay Håkansson
+#Date: 2023-01-04
+
 import sys
 
 if __name__ == "__main__":

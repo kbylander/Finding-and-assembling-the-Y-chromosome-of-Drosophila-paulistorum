@@ -8,6 +8,8 @@
 #SBATCH --mail-user ellen.siggstedt.1185@student.uu.se
 #SBATCH --mail-type=FAIL,END
 
+#Author: Jay Håkansson, 2023-01-04 
+
 module load bioinfo-tools samtools
 
 READS=/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/01_read_mapping/
