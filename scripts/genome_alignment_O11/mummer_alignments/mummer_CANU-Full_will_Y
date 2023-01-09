@@ -1,0 +1,29 @@
+#!/bin/bash -l
+#SBATCH -A snic2022-22-721
+#SBATCH -p core -n 3
+#SBATCH -t 04:00:00
+#SBATCH -J mummer_CANU-Full_willY_
+#SBATCH -o /proj/sllstore2017063/y_chromosome/nobackup/logs/CANU-Full_willY_
+#SBATCH -e /proj/sllstore2017063/y_chromosome/nobackup/logs/CANU-Full_willY_
+#SBATCH --mail-user kalle.99@live.com
+#SBATCH --mail-type=FAIL,END
+
+SUB="/crex/proj/sllstore2017063/y_chromosome/rawdata/O11_data/O11_Canu_contigs.fasta"
+REF="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/D_paulistorum_O11_res/genome_alignment_O11/y_contigs_wil.fasta"
+RES_DIR="/crex/proj/sllstore2017063/y_chromosome/nobackup/results/O11_Canu_res/mummerplot"
+
+module load bioinfo-tools MUMmer
+
+#nucmer -t 3 -p ${RES_DIR}/NDN-Full_willY_alignment $REF $SUB
+
+delta-filter -i 80 -l 5000 ${RES_DIR}/NDN-Full_willY_alignment.delta > ${RES_DIR}/NDN-Full_willY_alignment_filtered.delta
+
+#show-coords -TrH ${RES_DIR}/NDN-Full_willY_alignment_filtered.delta > ${RES_DIR}/NDN-Full_willY_alignment_show_coords.out
+
+#awk -F'\t' '{print $8, $1, $2, $9, $7}' ${RES_DIR}/NDN-Full_willY_alignment_show_coords.out > ${RES_DIR}/NDN-Full_willY_alignment_show_coords.bed
+
+mummerplot --png -p ${RES_DIR}/NDN-Full_willY_filtered_5000 -l ${RES_DIR}/NDN-Full_willY_alignment_filtered.delta
+
+
+
+
