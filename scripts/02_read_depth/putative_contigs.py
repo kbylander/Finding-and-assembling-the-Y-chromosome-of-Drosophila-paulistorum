@@ -20,6 +20,8 @@ contig_length=[]
 # count lengths of contigs. 
 occur=pd.DataFrame()
 occur["occurences"] = data.groupby(['contig']).size()
+
+#a rough estimation of length
 occur["occurences"]= occur["occurences"].apply(lambda x: (x*10000-5000))
 
 #for every instans, if the mean ratio is 0 and mixed > 0, save the contig and add 1 to corresponding index in frequency.
