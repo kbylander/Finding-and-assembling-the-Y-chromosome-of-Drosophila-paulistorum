@@ -1,6 +1,10 @@
 #Script to summarize extracted read depth data
 # Input read depth file, contig list bed file, outputname
 
+"""
+Authors: Ellen Siggstedt, 2023-01-04
+"""
+
 import sys
 import csv
 import math

@@ -1,3 +1,7 @@
+"""
+Authors: Ellen Siggstedt, 2023-01-04
+"""
+
 import sys
 import csv
 
@@ -23,17 +27,17 @@ if __name__ == "__main__":
     with open(sys.argv[1], 'r') as gene_fishing_result, open(sys.argv[2], "w") as result_outfile, open(sys.argv[3], "w") as count_outfile:
         gene_fishing=csv.reader(gene_fishing_result, delimiter='\t')
         nr_filtered_genes={}
-        result_outfile.write(f'Gene name\tContig name\tSecond gene name\tPercentage id\tGene length\n')
+        result_outfile.write(f'Gene name\tContig name\tSecond gene name\tPercentage id\tGene length\tQuerystart\tQueryend\n')
         count_outfile.write(f'Gene name\tNumber of this gene after filtering\n')
         for row in gene_fishing:
-            gene_length_60 = genes[row[0]][1]*0.6 #60% of the corresponding gene length
+            gene_length_60 = int(genes[row[0]][1])*0.6*(1/3) #60% of the corresponding gene length, multiplied by 1/3 if protein blast
             if int(row[3]) > int(gene_length_60): #filter away gene hits shorter than 60% of the gene length
                 if row[0] in nr_filtered_genes:
                     nr_filtered_genes[row[0]]=nr_filtered_genes[row[0]]+1
                 else:
                     nr_filtered_genes[row[0]]=1
                 #write gene name, contig name, second gene name, percentage id, gene length
-                result_outfile.write(f'{row[0]}\t{row[1]}\t{genes[row[0]][0]}\t{row[2]}\t{row[3]}\n')
+                result_outfile.write(f'{row[0]}\t{row[1]}\t{genes[row[0]][0]}\t{row[2]}\t{row[3]}\t{row[6]}\t{row[7]}\n')
         for key in nr_filtered_genes:
             #write gene names, number of filtered gene hits of that gene
             count_outfile.write(f'{key}\t{nr_filtered_genes[key]}\n')

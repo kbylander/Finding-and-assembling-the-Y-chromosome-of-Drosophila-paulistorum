@@ -1,6 +1,10 @@
 #Script to extract read depth data for list of contigs
 # Input read depth file, contig list bed file, outputname
 
+"""
+Authors: Ellen Siggstedt, 2023-01-04
+"""
+
 import sys
 import csv
 
