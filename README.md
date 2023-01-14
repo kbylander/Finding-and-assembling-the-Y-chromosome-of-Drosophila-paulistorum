@@ -451,57 +451,57 @@ The authors would like to thank our clients at ICM (Department of Cell and Molec
 
 ## **9 References**
 
-[Baião GC, Schneider DI, Miller WJ, Klasson L. 2019. The effect of Wolbachia on gene expression in Drosophila paulistorum and its implications for symbiont-induced host speciation. BMC Genomics 20: 465.](https://www.zotero.org/google-docs/?zofhWW)
+Baião GC, Schneider DI, Miller WJ, Klasson L. 2019. The effect of Wolbachia on gene expression in Drosophila paulistorum and its implications for symbiont-induced host speciation. BMC Genomics 20: 465.
 
-[Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, Bealer K, Madden TL. 2009. BLAST+: architecture and applications. BMC Bioinformatics 10: 421.](https://www.zotero.org/google-docs/?zofhWW)
+Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, Bealer K, Madden TL. 2009. BLAST+: architecture and applications. BMC Bioinformatics 10: 421.
 
-[Chang C-H, Larracuente AM. 2019. Heterochromatin-Enriched Assemblies Reveal the Sequence and Organization of the](https://www.zotero.org/google-docs/?zofhWW)[_Drosophila melanogaster_](https://www.zotero.org/google-docs/?zofhWW)[Y Chromosome. Genetics 211: 333–348.](https://www.zotero.org/google-docs/?zofhWW)
+Chang C-H, Larracuente AM. 2019. Heterochromatin-Enriched Assemblies Reveal the Sequence and Organization of the _Drosophila melanogaster_ Y Chromosome. Genetics 211: 333–348.
 
-[Danecek P, Bonfield JK, Liddle J, Marshall J, Ohan V, Pollard MO, Whitwham A, Keane T, McCarthy SA, Davies RM, Li H. 2021. Twelve years of SAMtools and BCFtools. GigaScience 10: giab008.](https://www.zotero.org/google-docs/?zofhWW)
+Danecek P, Bonfield JK, Liddle J, Marshall J, Ohan V, Pollard MO, Whitwham A, Keane T, McCarthy SA, Davies RM, Li H. 2021. Twelve years of SAMtools and BCFtools. GigaScience 10: giab008.
 
-[Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, Batut P, Chaisson M, Gingeras TR. 2013. STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29: 15–21.](https://www.zotero.org/google-docs/?zofhWW)
+Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, Batut P, Chaisson M, Gingeras TR. 2013. STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29: 15–21.
 
-[Dobzhansky T, Spassky B. 1959. Drosophila paulistorum, a cluster of species in statu nascendi\*†. Proceedings of the National Academy of Sciences 45: 419–428.](https://www.zotero.org/google-docs/?zofhWW)
+Dobzhansky T, Spassky B. 1959. Drosophila paulistorum, a cluster of species in statu nascendi\*†. Proceedings of the National Academy of Sciences 45: 419–428.
 
-[Finet C, Kassner VA, Carvalho AB, Chung H, Day JP, Day S, Delaney EK, De Ré FC, Dufour HD, Dupim E, Izumitani HF, Gautério TB, Justen J, Katoh T, Kopp A, Koshikawa S, Longdon B, Loreto EL, Nunes MDS, Raja KKB, Rebeiz M, Ritchie MG, Saakyan G, Sneddon T, Teramoto M, Tyukmaeva V, Vanderlinde T, Wey EE, Werner T, Williams TM, Robe LJ, Toda MJ, Marlétaz F. 2021. DrosoPhyla: Resources for Drosophilid Phylogeny and Systematics. Genome Biology and Evolution 13: evab179.](https://www.zotero.org/google-docs/?zofhWW)
+Finet C, Kassner VA, Carvalho AB, Chung H, Day JP, Day S, Delaney EK, De Ré FC, Dufour HD, Dupim E, Izumitani HF, Gautério TB, Justen J, Katoh T, Kopp A, Koshikawa S, Longdon B, Loreto EL, Nunes MDS, Raja KKB, Rebeiz M, Ritchie MG, Saakyan G, Sneddon T, Teramoto M, Tyukmaeva V, Vanderlinde T, Wey EE, Werner T, Williams TM, Robe LJ, Toda MJ, Marlétaz F. 2021. DrosoPhyla: Resources for Drosophilid Phylogeny and Systematics. Genome Biology and Evolution 13: evab179.
 
-[Furman BLS, Metzger DCH, Darolti I, Wright AE, Sandkam BA, Almeida P, Shu JJ, Mank JE. 2020. Sex Chromosome Evolution: So Many Exceptions to the Rules. Genome Biology and Evolution 12: 750–763.](https://www.zotero.org/google-docs/?zofhWW)
+Furman BLS, Metzger DCH, Darolti I, Wright AE, Sandkam BA, Almeida P, Shu JJ, Mank JE. 2020. Sex Chromosome Evolution: So Many Exceptions to the Rules. Genome Biology and Evolution 12: 750–763.
 
-[Hjelmen CE, Blackmon H, Holmes VR, Burrus CG, Johnston JS. 2019a. Genome Size Evolution Differs Between Drosophila Subgenera with Striking Differences in Male and Female Genome Size in Sophophora. G3 (Bethesda, Md) 9: 3167–3179.](https://www.zotero.org/google-docs/?zofhWW)
+Hjelmen CE, Blackmon H, Holmes VR, Burrus CG, Johnston JS. 2019a. Genome Size Evolution Differs Between Drosophila Subgenera with Striking Differences in Male and Female Genome Size in Sophophora. G3 (Bethesda, Md) 9: 3167–3179.
 
-[Hjelmen CE, Garrett MA, Holmes VR, Mynes M, Piron E, Johnston JS. 2019b. Genome Size Evolution within and between the Sexes. The Journal of Heredity 110: 219–228.](https://www.zotero.org/google-docs/?zofhWW)
+Hjelmen CE, Garrett MA, Holmes VR, Mynes M, Piron E, Johnston JS. 2019b. Genome Size Evolution within and between the Sexes. The Journal of Heredity 110: 219–228.
 
-[Hughes JF, Rozen S. 2012. Genomics and Genetics of Human and Primate Y Chromosomes. Annual Review of Genomics and Human Genetics 13: 83–108.](https://www.zotero.org/google-docs/?zofhWW)
+Hughes JF, Rozen S. 2012. Genomics and Genetics of Human and Primate Y Chromosomes. Annual Review of Genomics and Human Genetics 13: 83–108.
 
-[Kolmogorov M, Yuan J, Lin Y, Pevzner PA. 2019. Assembly of long, error-prone reads using repeat graphs. Nature Biotechnology 37: 540–546.](https://www.zotero.org/google-docs/?zofhWW)
+Kolmogorov M, Yuan J, Lin Y, Pevzner PA. 2019. Assembly of long, error-prone reads using repeat graphs. Nature Biotechnology 37: 540–546.
 
-[Koren S, Walenz BP, Berlin K, Miller JR, Bergman NH, Phillippy AM. 2017. Canu: scalable and accurate long-read assembly via adaptive](https://www.zotero.org/google-docs/?zofhWW)[_k_](https://www.zotero.org/google-docs/?zofhWW)[-mer weighting and repeat separation. Genome Research 27: 722–736.](https://www.zotero.org/google-docs/?zofhWW)
+Koren S, Walenz BP, Berlin K, Miller JR, Bergman NH, Phillippy AM. 2017. Canu: scalable and accurate long-read assembly via adaptive -mer weighting and repeat separation. Genome Research 27: 722–736.
 
-[Lenormand T, Roze D. 2022. Y recombination arrest and degeneration in the absence of sexual dimorphism. Science, doi 10.1126/science.abj1813.](https://www.zotero.org/google-docs/?zofhWW)
+Lenormand T, Roze D. 2022. Y recombination arrest and degeneration in the absence of sexual dimorphism. Science, doi 10.1126/science.abj1813.
 
-[Li H. 2018. Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics 34: 3094–3100.](https://www.zotero.org/google-docs/?zofhWW)
+Li H. 2018. Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics 34: 3094–3100.
 
-[Marsano RM, Giordano E, Messina G, Dimitri P. 2019. A New Portrait of Constitutive Heterochromatin: Lessons from Drosophila melanogaster. Trends in Genetics 35: 615–631.](https://www.zotero.org/google-docs/?zofhWW)
+Marsano RM, Giordano E, Messina G, Dimitri P. 2019. A New Portrait of Constitutive Heterochromatin: Lessons from Drosophila melanogaster. Trends in Genetics 35: 615–631
 
-[Massey JH, Wittkopp PJ. 2016. Chapter Two - The Genetic Basis of Pigmentation Differences Within and Between Drosophila Species. I: Orgogozo V (red.). Current Topics in Developmental Biology, s. 27–61. Academic Press,](https://www.zotero.org/google-docs/?zofhWW)
+Massey JH, Wittkopp PJ. 2016. Chapter Two - The Genetic Basis of Pigmentation Differences Within and Between Drosophila Species. I: Orgogozo V (red.). Current Topics in Developmental Biology, s. 27–61. Academic Press.
 
-[NextOmics. 2019. NextDenovo.](https://www.zotero.org/google-docs/?zofhWW)
+NextOmics. 2019. NextDenovo.
 
-[Ricchio J, Uno F, Carvalho AB. 2021. New Genes in the Drosophila Y Chromosome: Lessons from D. willistoni. Genes 12: 1815.](https://www.zotero.org/google-docs/?zofhWW)
+Ricchio J, Uno F, Carvalho AB. 2021. New Genes in the Drosophila Y Chromosome: Lessons from D. willistoni. Genes 12: 1815.
 
-[Robe LJ, Cordeiro J, Loreto ELS, Valente VLS. 2010. Taxonomic boundaries, phylogenetic relationships and biogeography of the Drosophila willistoni subgroup (Diptera: Drosophilidae). Genetica 138: 601–617.](https://www.zotero.org/google-docs/?zofhWW)
+Robe LJ, Cordeiro J, Loreto ELS, Valente VLS. 2010. Taxonomic boundaries, phylogenetic relationships and biogeography of the Drosophila willistoni subgroup (Diptera: Drosophilidae). Genetica 138: 601–617.
 
-[Robinson JT, Thorvaldsdóttir H, Winckler W, Guttman M, Lander ES, Getz G, Mesirov JP. 2011. Integrative Genomics Viewer. Nature biotechnology 29: 24–26.](https://www.zotero.org/google-docs/?zofhWW)
+Robinson JT, Thorvaldsdóttir H, Winckler W, Guttman M, Lander ES, Getz G, Mesirov JP. 2011. Integrative Genomics Viewer. Nature biotechnology 29: 24–26.
 
-[Salz H, Erickson JW. 2010. Sex determination in Drosophila: The view from the top. Fly 4: 60–70.](https://www.zotero.org/google-docs/?zofhWW)
+Salz H, Erickson JW. 2010. Sex determination in Drosophila: The view from the top. Fly 4: 60–70.
 
-[Sayers EW, Bolton EE, Brister JR, Canese K, Chan J, Comeau DC, Connor R, Funk K, Kelly C, Kim S, Madej T, Marchler-Bauer A, Lanczycki C, Lathrop S, Lu Z, Thibaud-Nissen F, Murphy T, Phan L, Skripchenko Y, Tse T, Wang J, Williams R, Trawick BW, Pruitt KD, Sherry ST. 2022. Database resources of the national center for biotechnology information. Nucleic Acids Research 50: D20–D26.](https://www.zotero.org/google-docs/?zofhWW)
+Sayers EW, Bolton EE, Brister JR, Canese K, Chan J, Comeau DC, Connor R, Funk K, Kelly C, Kim S, Madej T, Marchler-Bauer A, Lanczycki C, Lathrop S, Lu Z, Thibaud-Nissen F, Murphy T, Phan L, Skripchenko Y, Tse T, Wang J, Williams R, Trawick BW, Pruitt KD, Sherry ST. 2022. Database resources of the national center for biotechnology information. Nucleic Acids Research 50: D20–D26.
 
-[Wang SH, Nan R, Accardo MC, Sentmanat M, Dimitri P, Elgin SCR. 2014. A Distinct Type of Heterochromatin at the Telomeric Region of the Drosophila melanogaster Y Chromosome. PLOS ONE 9: e86451.](https://www.zotero.org/google-docs/?zofhWW)
+Wang SH, Nan R, Accardo MC, Sentmanat M, Dimitri P, Elgin SCR. 2014. A Distinct Type of Heterochromatin at the Telomeric Region of the Drosophila melanogaster Y Chromosome. PLOS ONE 9: e86451.
 
-[Zanini R, Deprá M, da Silva Valente VL. 2015. Can sibling species of the Drosophila willistoni subgroup be recognized through combined microscopy techniques? Revista Brasileira de Entomologia 59: 323–331.](https://www.zotero.org/google-docs/?zofhWW)
+Zanini R, Deprá M, da Silva Valente VL. 2015. Can sibling species of the Drosophila willistoni subgroup be recognized through combined microscopy techniques? Revista Brasileira de Entomologia 59: 323–331.
 
-[Zanini R, Müller MJ, Vieira GC, Valiati VH, Deprá M, Valente VL da S. 2018. Combining morphology and molecular data to improve Drosophila paulistorum (Diptera, Drosophilidae) taxonomic status. Fly 12: 81–94.](https://www.zotero.org/google-docs/?zofhWW)
+Zanini R, Müller MJ, Vieira GC, Valiati VH, Deprá M, Valente VL da S. 2018. Combining morphology and molecular data to improve Drosophila paulistorum (Diptera, Drosophilidae) taxonomic status. Fly 12: 81–94.
 
 ## 10 Appendix
 
