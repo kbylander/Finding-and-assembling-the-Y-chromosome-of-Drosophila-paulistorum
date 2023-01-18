@@ -1,4 +1,4 @@
-# Finding and assembling the Y chromosome of _Drosophila paulistorum
+# Finding and assembling the Y chromosome of _Drosophila paulistorum_
 
 This project is part of the course Applied Bioinformatics, 1MB519, at Uppsala University.
 
